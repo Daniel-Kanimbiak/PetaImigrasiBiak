@@ -1,0 +1,176 @@
+{
+  "biak": {
+    "totalWNA": 14,
+    "lokasi": [
+      { "nama": "PT. WAPOGA SHIPPING", "lon": 136.033, "lat": -1.143, "wna": [
+        { "no": 1, "nama": "KELAH JOK", "kebangsaan": "MALAYSIA", "paspor": "K54665017" },
+        { "no": 2, "nama": "ANDY IMANG", "kebangsaan": "MALAYSIA", "paspor": "K39943399" }
+      ]},
+      { "nama": "BADAN RISET DAN INOVASI NASIONAL (BRIN)", "lon": 136.1033, "lat": -1.1884, "wna": [
+        { "no": 1, "nama": "VARUN KUMAR", "kebangsaan": "INDIA", "paspor": "01691333" },
+        { "no": 2, "nama": "MAHESH PRAKASH DHUPEE", "kebangsaan": "INDIA", "paspor": "01652471" },
+        { "no": 3, "nama": "GAUTAM KUMAR", "kebangsaan": "INDIA", "paspor": "01678626" },
+        { "no": 4, "nama": "VINAY MOR", "kebangsaan": "INDIA", "paspor": "01669015" },
+        { "no": 5, "nama": "SELVIN KRISHNASAMY", "kebangsaan": "INDIA", "paspor": "01678613" }
+      ]},
+      { "nama": "YAYASAN REBOISASI EDEN PAPUA", "lon": 136.0863, "lat": -1.1767, "wna": [
+        { "no": 1, "nama": "DANIEL JAMES MAXEY", "kebangsaan": "KANADA", "paspor": "AR129273" },
+        { "no": 2, "nama": "AURORE F.C.JEANNOT", "kebangsaan": "PERANCIS", "paspor": "20EA48625" }
+      ]}
+    ],
+    "kategori": [
+      { "nama": "PEMEGANG IZIN TINGGAL TETAP (ITAP)", "wna": [
+        { "no": 1, "nama": "FA YIN LIE", "kebangsaan": "BELANDA", "paspor": "NMCH80387" },
+        { "no": 2, "nama": "JOSEPH KOAMI KOOMSON", "kebangsaan": "GHANA", "paspor": "G3492350" },
+        { "no": 3, "nama": "TSUN SHU LIU", "kebangsaan": "TAIWAN", "paspor": "353382641" },
+        { "no": 4, "nama": "AHMED MAHMOUD ELTANTAWY", "kebangsaan": "AMERIKA", "paspor": "501469269" },
+        { "no": 5, "nama": "YULIA BUSLI", "kebangsaan": "AMERIKA", "paspor": "521300792" }
+      ]}
+    ]
+  },
+  "yapen": {
+    "totalWNA": 9,
+    "lokasi": [
+      { "nama": "PT. SINAR WIJAYA PLYWOOD INDUSTRIES", "lon": 136.7595, "lat": -1.8226, "wna": [
+        { "no": 1, "nama": "WONG KA DOONG", "kebangsaan": "MALAYSIA", "paspor": "K40532344" },
+        { "no": 2, "nama": "HII WEI SIONG", "kebangsaan": "MALAYSIA", "paspor": "K41399641" },
+        { "no": 3, "nama": "PAU CHIONG WOO", "kebangsaan": "MALAYSIA", "paspor": "K54978543" },
+        { "no": 4, "nama": "SYUKUR BIN ABDULLAH", "kebangsaan": "MALAYSIA", "paspor": "K52601429" },
+        { "no": 5, "nama": "JUANAS BIN FRANCIS", "kebangsaan": "MALAYSIA", "paspor": "K51823481" },
+        { "no": 6, "nama": "CHIU MEE CHONG", "kebangsaan": "MALAYSIA", "paspor": "K53194089" },
+        { "no": 7, "nama": "YONG NGOK HEE", "kebangsaan": "MALAYSIA", "paspor": "K54985397" },
+        { "no": 8, "nama": "LAI KUOK MING", "kebangsaan": "MALAYSIA", "paspor": "K54434135" },
+        { "no": 9, "nama": "LEE SIONG LEONG", "kebangsaan": "MALAYSIA", "paspor": "K54990827" }
+      ]}
+    ]
+  },
+  "nabire": {
+    "totalWNA": 205,
+    "lokasi": [
+      { "nama": "PT. NABIRE BARU", "lon": 135.2709, "lat": -3.418, "wna": [
+        { "no": 1, "nama": "GOPI KRISHNANN", "kebangsaan": "MALAYSIA", "paspor": "A60808791" },
+        { "no": 2, "nama": "JOSHUA JEYENTHIREN ANANTHAM", "kebangsaan": "SRI LANKA", "paspor": "A59211849" },
+        { "no": 3, "nama": "DILUSH PRABUDDHA SUNNA DENIYAGE", "kebangsaan": "SRI LANKA", "paspor": "N9815008" },
+        { "no": 4, "nama": "MATAN DORIASAMY", "kebangsaan": "MALAYSIA", "paspor": "A56495111" },
+        { "no": 5, "nama": "NISHANTHA EKANAYAKE", "kebangsaan": "MALAYSIA", "paspor": "N10327109" },
+        { "no": 6, "nama": "LEON INCTON JACOB", "kebangsaan": "MALAYSIA", "paspor": "A55210080" }
+      ]}
+    ],
+    "kategori": [
+      { "nama": "PT. SHENGDA TRADING INDONESIA", "wna": [{"no": 1, "nama": "YU YIXIN", "kebangsaan": "CHINA", "paspor": "E93758807"}] },
+      { "nama": "PT. BAO SEN INDONESIA", "wna": [{"no": 1, "nama": "YANG YINFENG", "kebangsaan": "CHINA", "paspor": "ED0882731"}, {"no": 2, "nama": "YANG JIANGSU", "kebangsaan": "CHINA", "paspor": "EG9112417"}] },
+      { "nama": "PT. RIYI BROTHER INDONESIA", "wna": [
+          {"no": 1, "nama": "LEI LI", "kebangsaan": "CHINA", "paspor": "EL4413308"}, {"no": 2, "nama": "CHEN JINFU", "kebangsaan": "CHINA", "paspor": "EJ6347008"},
+          {"no": 3, "nama": "CHEN WEI", "kebangsaan": "CHINA", "paspor": "EJ6004715"}, {"no": 4, "nama": "LI HEJIE", "kebangsaan": "CHINA", "paspor": "EJ7203084"},
+          {"no": 5, "nama": "CHUANPENG LI", "kebangsaan": "CHINA", "paspor": "EJ7394724"}, {"no": 6, "nama": "LI KUNLONG", "kebangsaan": "CHINA", "paspor": "E47473423"},
+          {"no": 7, "nama": "WANG MIAO", "kebangsaan": "CHINA", "paspor": "E38649997"}, {"no": 8, "nama": "JIANG SHUAI", "kebangsaan": "CHINA", "paspor": "E97711103"},
+          {"no": 18, "nama": "HU QIGANG", "kebangsaan": "CHINA", "paspor": "EF3855228"}, {"no": 19, "nama": "ZHANG YONG", "kebangsaan": "CHINA", "paspor": "EJ8359044"},
+          {"no": 20, "nama": "WANXI ZHANG", "kebangsaan": "CHINA", "paspor": "EP1521027"}
+      ]},
+      { "nama": "PT. JAYA HIMALAYA MINING", "wna": [{"no": 1, "nama": "WANG JIAMAO", "kebangsaan": "CHINA", "paspor": "EH2262501"}] },
+      { "nama": "PT. YIBO JIN INDONESIA", "wna": [
+        {"no": 1, "nama": "LIU HAN QI", "kebangsaan": "CHINA", "paspor": "EF9941136"}, {"no": 2, "nama": "YUAN JIAN", "kebangsaan": "CHINA", "paspor": "EP3200824"},
+        {"no": 3, "nama": "QIU XIAO HU", "kebangsaan": "CHINA", "paspor": "EM0478894"}, {"no": 4, "nama": "FAN JUN", "kebangsaan": "CHINA", "paspor": "EG1710365"},
+        {"no": 5, "nama": "WU LEI", "kebangsaan": "CHINA", "paspor": "E55759881"}, {"no": 6, "nama": "LI MING", "kebangsaan": "CHINA", "paspor": "EM045B5574"},
+        {"no": 7, "nama": "ZANG HUA BING", "kebangsaan": "CHINA", "paspor": "EL3887239"}
+      ]},
+      { "nama": "PT. KRISTALIN EKALESTARI", "wna": [
+        {"no": 1, "nama": "NING BO", "kebangsaan": "CHINA", "paspor": "E08003975"}, {"no": 2, "nama": "MA CHUAN", "kebangsaan": "CHINA", "paspor": "E33640761"},
+        {"no": 3, "nama": "LIU GUOYONG", "kebangsaan": "CHINA", "paspor": "EC3569631"}, {"no": 4, "nama": "HE JIANMING", "kebangsaan": "CHINA", "paspor": "ED5799958"},
+        {"no": 5, "nama": "FENG ZHEN", "kebangsaan": "CHINA", "paspor": "E96679986"}, {"no": 6, "nama": "LI SHENGQIANG", "kebangsaan": "CHINA", "paspor": "ED7910667"},
+        {"no": 7, "nama": "WA MINGRAN", "kebangsaan": "CHINA", "paspor": "EJ2757247"}, {"no": 8, "nama": "ZHAO LIN", "kebangsaan": "CHINA", "paspor": "E84078365"},
+        {"no": 9, "nama": "LI YUHAI", "kebangsaan": "CHINA", "paspor": "EJ3194308"}, {"no": 10, "nama": "LIU JIANWEN", "kebangsaan": "CHINA", "paspor": "E54223886"},
+        {"no": 11, "nama": "LIU XIAOHUI", "kebangsaan": "CHINA", "paspor": "EJ3206333"}, {"no": 12, "nama": "WANG YINGQING", "kebangsaan": "CHINA", "paspor": "EJ3218037"},
+        {"no": 13, "nama": "XU HONGTOA", "kebangsaan": "CHINA", "paspor": "EG3837307"}, {"no": 14, "nama": "LIU CHENGBING", "kebangsaan": "CHINA", "paspor": "EJ7664351"},
+        {"no": 15, "nama": "XIE KUI", "kebangsaan": "CHINA", "paspor": "EJ7498217"}, {"no": 16, "nama": "XIAO ZHENGYONG", "kebangsaan": "CHINA", "paspor": "EK3117227"},
+        {"no": 17, "nama": "YANG XIUJUN", "kebangsaan": "CHINA", "paspor": "EK0586219"}, {"no": 18, "nama": "YUAN JING", "kebangsaan": "CHINA", "paspor": "E64516143"},
+        {"no": 19, "nama": "JIAO CHENGWU", "kebangsaan": "CHINA", "paspor": "E88814030"}, {"no": 20, "nama": "CHANG GUOPENG", "kebangsaan": "CHINA", "paspor": "EK2766587"},
+        {"no": 21, "nama": "HUANG YICHAO", "kebangsaan": "CHINA", "paspor": "EC3550760"}, {"no": 22, "nama": "HU YUANQIANG", "kebangsaan": "CHINA", "paspor": "EJ3208527"},
+        {"no": 23, "nama": "LI YANG", "kebangsaan": "CHINA", "paspor": "EK3411285"}, {"no": 24, "nama": "WANG TAO", "kebangsaan": "CHINA", "paspor": "EJ8808106"},
+        {"no": 25, "nama": "WANG YONGJIAN", "kebangsaan": "CHINA", "paspor": "EB5016027"}, {"no": 26, "nama": "YANG MAOLIN", "kebangsaan": "CHINA", "paspor": "E41861481"},
+        {"no": 27, "nama": "YUAN XU", "kebangsaan": "CHINA", "paspor": "EK3115573"}, {"no": 28, "nama": "ZHAO JINGKUI", "kebangsaan": "CHINA", "paspor": "EJ7456663"},
+        {"no": 29, "nama": "LAN HONGJUN", "kebangsaan": "CHINA", "paspor": "E86627653"}, {"no": 30, "nama": "WEN JINGAO", "kebangsaan": "CHINA", "paspor": "E97461691"},
+        {"no": 31, "nama": "NING ZHONGQUAN", "kebangsaan": "CHINA", "paspor": "E74464001"}, {"no": 32, "nama": "ZHANG BO", "kebangsaan": "CHINA", "paspor": "E57142496"},
+        {"no": 33, "nama": "HU XIUFA", "kebangsaan": "CHINA", "paspor": "EG3780785"}, {"no": 34, "nama": "HU SHUBING", "kebangsaan": "CHINA", "paspor": "EJ8808638"},
+        {"no": 35, "nama": "JIANG NAIJIAN", "kebangsaan": "CHINA", "paspor": "EF6343727"}, {"no": 36, "nama": "CHEN MINGJING", "kebangsaan": "CHINA", "paspor": "EK0634579"},
+        {"no": 37, "nama": "JIANG XINBING", "kebangsaan": "CHINA", "paspor": "EL3726502"}, {"no": 38, "nama": "CHEN JIAN", "kebangsaan": "CHINA", "paspor": "EL8450430"},
+        {"no": 39, "nama": "NING BO", "kebangsaan": "CHINA", "paspor": "EK1476162"}, {"no": 40, "nama": "CHEN YINGGANG", "kebangsaan": "CHINA", "paspor": "EM9181893"},
+        {"no": 41, "nama": "LIANG JIANG TAO", "kebangsaan": "CHINA", "paspor": "EM3788539"}
+      ]},
+      { "nama": "PT. CENDERAWASIH MANDIRI NUSANTARA", "wna": [
+        {"no": 1, "nama": "GLEB KAIGARODOV", "kebangsaan": "RUSIA", "paspor": "667971277"}, {"no": 2, "nama": "EVEGENI POKUTNYA", "kebangsaan": "RUSIA", "paspor": "769471473"},
+        {"no": 3, "nama": "IAKOV ZASYPKIN", "kebangsaan": "RUSIA", "paspor": "666640744"}, {"no": 4, "nama": "DMITRII NISTRATOV", "kebangsaan": "RUSIA", "paspor": "756377733"},
+        {"no": 5, "nama": "TROFIMOV EVGENI", "kebangsaan": "RUSIA", "paspor": "760185985"}, {"no": 6, "nama": "VLADIMIR IVANOV", "kebangsaan": "RUSIA", "paspor": "753567140"},
+        {"no": 7, "nama": "ALESHIN ANDREI", "kebangsaan": "RUSIA", "paspor": "770226207"}
+      ]},
+      { "nama": "PT. RUN HENG INDO INTERNATIONAL", "wna": [ 
+        {"no": 1, "nama": "LIU ZONGJUN", "kebangsaan": "CHINA", "paspor": "EJ3867163"}, {"no": 2, "nama": "BIN LI", "kebangsaan": "CHINA", "paspor": "EM1352209"},
+        {"no": 3, "nama": "TIANYOU CHEN", "kebangsaan": "CHINA", "paspor": "EC3443066"}, {"no": 4, "nama": "JIANKE LUO", "kebangsaan": "CHINA", "paspor": "EC7473181"},
+        {"no": 5, "nama": "LI SHANGWU", "kebangsaan": "CHINA", "paspor": "EC3443067"}, {"no": 7, "nama": "SHANGWU LI", "kebangsaan": "CHINA", "paspor": "EC3443067"},
+        {"no": 8, "nama": "YANG BING", "kebangsaan": "CHINA", "paspor": "EB3046658"}, {"no": 9, "nama": "WANG YUJIA", "kebangsaan": "CHINA", "paspor": "EA7637353"},
+        {"no": 10, "nama": "YANG KAIPI", "kebangsaan": "CHINA", "paspor": "EL6066430"}, {"no": 11, "nama": "LIU GUANGWANG", "kebangsaan": "CHINA", "paspor": "EM3087557"},
+        {"no": 12, "nama": "YI YONGQING", "kebangsaan": "CHINA", "paspor": "EB3049383"}, {"no": 13, "nama": "ZENG ZHIYUN", "kebangsaan": "CHINA", "paspor": "EM2929524"},
+        {"no": 14, "nama": "LI YUNHONG", "kebangsaan": "CHINA", "paspor": "EJ3889459"}, {"no": 15, "nama": "LIU JIANHONG", "kebangsaan": "CHINA", "paspor": "EE2307706"},
+        {"no": 16, "nama": "XU JUN", "kebangsaan": "CHINA", "paspor": "EN2880309"}, {"no": 17, "nama": "ZHANG YU", "kebangsaan": "CHINA", "paspor": "EN6772655"},
+        {"no": 18, "nama": "FU WEIJUN", "kebangsaan": "CHINA", "paspor": "EG6060029"}, {"no": 19, "nama": "PENG FUJIAN", "kebangsaan": "CHINA", "paspor": "EN9818841"},
+        {"no": 20, "nama": "HUANG LU", "kebangsaan": "CHINA", "paspor": "EN1428431"}, {"no": 21, "nama": "JUNHUI CHEN", "kebangsaan": "CHINA", "paspor": "EC7510607"},
+        {"no": 22, "nama": "GAN ZHWEI", "kebangsaan": "CHINA", "paspor": "EP2342421"}, {"no": 23, "nama": "HUANG GUOLIANG", "kebangsaan": "CHINA", "paspor": "EP5568559"},
+        {"no": 24, "nama": "LI TENG", "kebangsaan": "CHINA", "paspor": "EP2372590"}, {"no": 25, "nama": "TANG JIANQIANG", "kebangsaan": "CHINA", "paspor": "EP2480602"},
+        {"no": 26, "nama": "CHEN YING", "kebangsaan": "CHINA", "paspor": "EM1352209"}, {"no": 27, "nama": "YANG YIN FENG", "kebangsaan": "CHINA", "paspor": "ED0882731"},
+        {"no": 28, "nama": "ZHOU QINGTANG", "kebangsaan": "CHINA", "paspor": "EP2529458"}, {"no": 29, "nama": "CHEN ZHENGQIAO", "kebangsaan": "CHINA", "paspor": "EN2880309"},
+        {"no": 30, "nama": "HE HAIHONG", "kebangsaan": "CHINA", "paspor": "EL6079232"}
+      ]},
+      { "nama": "PT. WANSHUAI INDO MINING", "wna": [
+        {"no": 1, "nama": "LONG HONG LIN", "kebangsaan": "CHINA", "paspor": "EL4600195"}, {"no": 2, "nama": "REN PENGGUO", "kebangsaan": "CHINA", "paspor": "EL2212028"},
+        {"no": 3, "nama": "ZHU ZHONGHUA", "kebangsaan": "CHINA", "paspor": "EB5701977"}, {"no": 4, "nama": "YANG CHENGDONG", "kebangsaan": "CHINA", "paspor": "EM3118603"},
+        {"no": 5, "nama": "SHU XIAOPING", "kebangsaan": "CHINA", "paspor": "EL3329687"}, {"no": 6, "nama": "YANG QUANFANG", "kebangsaan": "CHINA", "paspor": "EN6742144"},
+        {"no": 7, "nama": "DONG GUANGLEI", "kebangsaan": "CHINA", "paspor": "EJ9280943"}, {"no": 8, "nama": "GUO JUN", "kebangsaan": "CHINA", "paspor": "EN2851442"},
+        {"no": 9, "nama": "LIU BO", "kebangsaan": "CHINA", "paspor": "EN1425154"}, {"no": 10, "nama": "LIU DEZHANG", "kebangsaan": "CHINA", "paspor": "EH5089698"},
+        {"no": 11, "nama": "TANG HUI", "kebangsaan": "CHINA", "paspor": "EN1406331"}, {"no": 12, "nama": "XIONG ZHENGQUAN", "kebangsaan": "CHINA", "paspor": "EG6065676"},
+        {"no": 13, "nama": "YIN GUIBING", "kebangsaan": "CHINA", "paspor": "EK1006935"}, {"no": 14, "nama": "ZHANG KAI", "kebangsaan": "CHINA", "paspor": "EJ5558817"},
+        {"no": 15, "nama": "ZHENG WEI", "kebangsaan": "CHINA", "paspor": "EK2678944"}, {"no": 16, "nama": "LIU SHUANGLIN", "kebangsaan": "CHINA", "paspor": "EK9854495"},
+        {"no": 17, "nama": "HAO ERLU", "kebangsaan": "CHINA", "paspor": "EB9386833"}, {"no": 18, "nama": "FU ZHONGLIANG", "kebangsaan": "CHINA", "paspor": "EN2843434"},
+        {"no": 19, "nama": "HU JIE", "kebangsaan": "CHINA", "paspor": "E88497614"}, {"no": 20, "nama": "DONG LIHUI", "kebangsaan": "CHINA", "paspor": "EB5103765"},
+        {"no": 21, "nama": "ZHAO SHU", "kebangsaan": "CHINA", "paspor": "EN9803173"}, {"no": 22, "nama": "DONG ZHIQI", "kebangsaan": "CHINA", "paspor": "EN4028559"},
+        {"no": 23, "nama": "LIU YANG", "kebangsaan": "CHINA", "paspor": "ED4970667"}, {"no": 24, "nama": "CHEN SONGBAl", "kebangsaan": "CHINA", "paspor": "EF8833387"},
+        {"no": 25, "nama": "SHI ZHANLEI", "kebangsaan": "CHINA", "paspor": "EF5563240"}, {"no": 26, "nama": "HUANG HUAMING", "kebangsaan": "CHINA", "paspor": "EJ3873419"},
+        {"no": 27, "nama": "ZHANG MIN", "kebangsaan": "CHINA", "paspor": "ED0088153"}, {"no": 28, "nama": "LUO RENLIN", "kebangsaan": "CHINA", "paspor": "EJ1244975"},
+        {"no": 29, "nama": "YUAN JIANLIN", "kebangsaan": "CHINA", "paspor": "EJ3861397"}, {"no": 30, "nama": "YUAN QIANG", "kebangsaan": "CHINA", "paspor": "EN2894423"},
+        {"no": 31, "nama": "FU GAOFENG", "kebangsaan": "CHINA", "paspor": "EG1290147"}, {"no": 32, "nama": "YANG CHENGQUAN", "kebangsaan": "CHINA", "paspor": "EK1031414"},
+        {"no": 33, "nama": "YANG HENG", "kebangsaan": "CHINA", "paspor": "EC9028651"}, {"no": 34, "nama": "LI GANGYAO", "kebangsaan": "CHINA", "paspor": "EN4970287"},
+        {"no": 35, "nama": "HUANG HAILIANG", "kebangsaan": "CHINA", "paspor": "EJ7598537"}, {"no": 36, "nama": "PENG TIENIU", "kebangsaan": "CHINA", "paspor": "EH0398499"},
+        {"no": 37, "nama": "LIU GAN", "kebangsaan": "CHINA", "paspor": "EK3559741"}, {"no": 38, "nama": "PENG BOLIN", "kebangsaan": "CHINA", "paspor": "EL6076456"},
+        {"no": 39, "nama": "PENG JIANBO", "kebangsaan": "CHINA", "paspor": "EN6786064"}, {"no": 40, "nama": "SONG CHANGQUAN", "kebangsaan": "CHINA", "paspor": "EH9089219"},
+        {"no": 41, "nama": "ZHOU JIAWANG", "kebangsaan": "CHINA", "paspor": "EN4970286"}, {"no": 42, "nama": "LIU YUAN YANG", "kebangsaan": "CHINA", "paspor": "E94126975"},
+        {"no": 43, "nama": "SU LINHAN", "kebangsaan": "CHINA", "paspor": "EC5783335"}, {"no": 44, "nama": "PU DAI LIANG", "kebangsaan": "CHINA", "paspor": "EN9852991"},
+        {"no": 45, "nama": "SHI CHAOBO", "kebangsaan": "CHINA", "paspor": "EN7209117"}
+      ]},
+      { "nama": "PT. XINDA MINING", "wna": [ {"no": 1, "nama": "JIAN JIAN HU", "kebangsaan": "CHINA", "paspor": "EK1984055"}, {"no": 2, "nama": "LUO XIANJIAN", "kebangsaan": "CHINA", "paspor": "E89782429"}, {"no": 3, "nama": "TENG BO", "kebangsaan": "CHINA", "paspor": "EN4972397"}, {"no": 4, "nama": "FU RENPING", "kebangsaan": "CHINA", "paspor": "E8216448"} ] },
+      { "nama": "PT. HAIRUN INDUSTRIAL INDONESIA", "wna": [ {"no": 1, "nama": "WANG XINYU", "kebangsaan": "CHINA", "paspor": "EJ5049493"}, {"no": 2, "nama": "TANG KUNJI", "kebangsaan": "CHINA", "paspor": "EN5386475"}, {"no": 3, "nama": "ZHOU MIN", "kebangsaan": "CHINA", "paspor": "EF9443629"}, {"no": 4, "nama": "LUO JIANQIANG", "kebangsaan": "CHINA", "paspor": "E73948126"}, {"no": 5, "nama": "WANG GANG", "kebangsaan": "CHINA", "paspor": "EN5454731"}, {"no": 6, "nama": "MI ZHOUJUN", "kebangsaan": "CHINA", "paspor": "EN3169839"}, {"no": 7, "nama": "DENG KE", "kebangsaan": "CHINA", "paspor": "EN7903364"}, {"no": 8, "nama": "ZHOU XIAOYU", "kebangsaan": "CHINA", "paspor": "EN3168207"}, {"no": 9, "nama": "ZHANG HONG", "kebangsaan": "CHINA", "paspor": "EP0618033"}, {"no": 10, "nama": "WU TAO", "kebangsaan": "CHINA", "paspor": "EN5428484"}, {"no": 11, "nama": "WANG ZHONGHU", "kebangsaan": "CHINA", "paspor": "EK9197368"}, {"no": 12, "nama": "SUN CHAO", "kebangsaan": "CHINA", "paspor": "E84105648"} ] },
+      { "nama": "PT. DUTA PUTRA UTAMA", "wna": [{"no": 1, "nama": "TIAN RUNCAI", "kebangsaan": "CHINA", "paspor": "E99366102"}]},
+      { "nama": "PT. BANGWANGYU KUANGYE INDONESIA", "wna": [ {"no": 1, "nama": "JIANG QINGCHUAN", "kebangsaan": "CHINA", "paspor": "EM3128062"}, {"no": 2, "nama": "TANG LIHUA", "kebangsaan": "CHINA", "paspor": "EJ7763484"}, {"no": 3, "nama": "GAO HONGLIANG", "kebangsaan": "CHINA", "paspor": "ED0842273"}, {"no": 4, "nama": "XU FEI", "kebangsaan": "CHINA", "paspor": "EN2138806"}, {"no": 5, "nama": "TANG LIGUO", "kebangsaan": "CHINA", "paspor": "EJ9868601"}, {"no": 6, "nama": "CAI SHUHUA", "kebangsaan": "CHINA", "paspor": "EG2595908"}, {"no": 7, "nama": "CHU CHUCHENG", "kebangsaan": "CHINA", "paspor": "EN3263360"}, {"no": 8, "nama": "FENG MEIYU", "kebangsaan": "CHINA", "paspor": "EN6211732"}, {"no": 9, "nama": "WANG, CUNFA", "kebangsaan": "CHINA", "paspor": "E79276521"}, {"no": 10, "nama": "CHEN JIANGUO", "kebangsaan": "CHINA", "paspor": "EC3446680"}, {"no": 11, "nama": "XU, LIANGCAI", "kebangsaan": "CHINA", "paspor": "EM7985901"}, {"no": 12, "nama": "HUANG, JUNCHENG", "kebangsaan": "CHINA", "paspor": "EN9188318"}, {"no": 13, "nama": "CAI DONGHHUA", "kebangsaan": "CHINA", "paspor": "EN6211730"} ] },
+      { "nama": "PT. SUMBER AKARINDO UTAMA", "wna": [{"no": 1, "nama": "LIANG LIPING", "kebangsaan": "CHINA", "paspor": "EF2919835"}, {"no": 2, "nama": "LI PING", "kebangsaan": "CHINA", "paspor": "EJ2719035"}]},
+      { "nama": "PT. SIGMA SOLUTIONS ADVISORS", "wna": [ {"no": 1, "nama": "HARIM AQUIM PASCUAL RODRIGUEZ", "kebangsaan": "GUATEMALA", "paspor": "414879287"}, {"no": 2, "nama": "ALDEN HARIM PASCUAL RODRIGUEZ", "kebangsaan": "GUATEMALA", "paspor": "PA0892741"}, {"no": 3, "nama": "JULISSA LINETH RODRIGUEZ SANCHEZ", "kebangsaan": "PANAMA", "paspor": "PA0898503"}, {"no": 4, "nama": "FRANCISCO PASCUAL MIGUEL", "kebangsaan": "PANAMA", "paspor": "174061048"} ]},
+      { "nama": "PT. HARMONI ENERGI TAMBANG", "wna": [ {"no": 1, "nama": "Yuan Qiang", "kebangsaan": "CHINA", "paspor": "EN2894423"}, {"no": 2, "nama": "Zhang Min", "kebangsaan": "CHINA", "paspor": "ED0088153"}, {"no": 3, "nama": "Yuan Jianlin", "kebangsaan": "CHINA", "paspor": "EJ3861397"}, {"no": 4, "nama": "Luo Renlin", "kebangsaan": "CHINA", "paspor": "EJ1244975"}, {"no": 5, "nama": "Huang Huaming", "kebangsaan": "CHINA", "paspor": "EJ38773419"}, {"no": 6, "nama": "Dong Zhiqi", "kebangsaan": "CHINA", "paspor": "EN4028559"}, {"no": 7, "nama": "Yang Chengdong", "kebangsaan": "CHINA", "paspor": "EM3118603"}, {"no": 8, "nama": "Liu Yang", "kebangsaan": "CHINA", "paspor": "ED4970667"}, {"no": 9, "nama": "Su Linhan", "kebangsaan": "CHINA", "paspor": "EC5783335"}, {"no": 10, "nama": "Pa Dailiang", "kebangsaan": "CHINA", "paspor": "EN9852991"}, {"no": 11, "nama": "Chen Song Bai", "kebangsaan": "CHINA", "paspor": "EF8833387"} ]},
+      {
+  "nama": "PT. YAYASAN DONOR KASIH INDONESIA",
+  "wna": [
+    { "no": 1, "nama": "IWAN BOERSMA", "kebangsaan": "AFRIKA SELATAN", "paspor": "M00268209" },
+    { "no": 2, "nama": "MAGDA MARIE BOERSMA", "kebangsaan": "AFRIKA SELATAN", "paspor": "M00339565" },
+    { "no": 3, "nama": "SIMEON BOERSMA", "kebangsaan": "AFRIKA SELATAN", "paspor": "A07600891" },
+    { "no": 4, "nama": "SALOME BOERSMA", "kebangsaan": "AFRIKA SELATAN", "paspor": "A07483729" },
+    { "no": 5, "nama": "SAMUEL BOERSMA", "kebangsaan": "AFRIKA SELATAN", "paspor": "A07732698" },
+    { "no": 6, "nama": "SILAS BOERSMA", "kebangsaan": "AFRIKA SELATAN", "paspor": "A07459041" }
+  ]
+},
+{
+  "nama": "PT. GHZ MINING DEVELOPMENT",
+  "wna": [
+    { "no": 1, "nama": "GAN JINGYUN", "kebangsaan": "CHINA", "paspor": "EN0451380" }
+  ]
+}
+  ]
+  },
+  "supiori": { "totalWNA": 0 },
+  "waropen": { "totalWNA": 0 }
+}
