@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peta 3D - Sebaran WNA Imigrasi Biak</title>
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.110/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.110/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+  <style>
+    html, body, #cesiumContainer { width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden; font-family: sans-serif; }
+    #titleOverlay { position: absolute; top: 25px; left: 50%; transform: translateX(-50%); color: white; font-size: 32px; font-weight: bold; text-shadow: 3px 3px 5px #000; z-index: 10; pointer-events: none; text-align: center; width: 90%; text-transform: uppercase; line-height: 1.2; }
+    #titleOverlay span { font-size: 24px; color: #00ffff; }
+    /* CSS untuk Tooltip Keterangan */
+    #tooltip { display: none; position: absolute; background-color: rgba(0, 0, 0, 0.8); color: white; padding: 8px; border-radius: 6px; font-size: 14px; pointer-events: none; z-index: 10; border: 1px solid #fff; }
+    #infoPanel { display: none; position: absolute; top: 110px; right: 15px; width: 500px; max-height: 70%; background: rgba(40, 40, 40, 0.9); color: white; border-radius: 8px; padding: 20px; border: 1px solid #555; z-index: 10; overflow-y: auto; }
+    #infoPanel h2 { margin-top: 0; font-size: 1.3em; color: #00ffff; }
+    #infoPanel h3 { margin-top: 15px; border-bottom: 1px solid #555; padding-bottom: 5px; }
+    #infoPanel table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    #infoPanel th, #infoPanel td { padding: 6px; text-align: left; border-bottom: 1px solid #444; }
+    #infoPanel th { font-size: 0.9em; }
+    #infoPanel td { font-size: 0.85em; }
+    #closePanelButton, #resetViewButton { cursor: pointer; background: #555; color: white; border: 1px solid #888; border-radius: 4px; padding: 8px 12px; margin-top: 15px; }
+    #resetViewButton { display: none; position: absolute; top: 20px; left: 20px; z-index: 10; }
+  </style>
+</head>
+<body>
+  <div id="cesiumContainer"></div>
+  <div id="titleOverlay">DATA ORANG ASING PADA WILAYAH KERJA KANTOR IMIGRASI BIAK<br><span id="total-wna-title"></span></div>
+  <button id="resetViewButton">Kembali ke Tampilan Awal</button>
+  <div id="tooltip"></div>
+  <div id="infoPanel">
+    <h2 id="panelTitle"></h2>
+    <div id="panelContent"></div>
+    <button id="closePanelButton">Tutup</button>
+  </div>
+
+  <script>
+    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIzMjM3M2I0My0yNTQ4LTQwNWMtYjUxYi0yODYwZmI1ODkwZGMiLCJpZCI6MzMzNTI1LCJpYXQiOjE3NTYyNzU0ODl9.jc138BIEbRXEg_JhA_JiHB867UT1a3xmkrxDiPlGDUQ';
+
+    const viewer = new Cesium.Viewer('cesiumContainer', { shouldAnimate: true, infoBox: false, selectionIndicator: false });
+    
+    const titleOverlay = document.getElementById('titleOverlay');
+    
+    fetch('data.json')
+      .then(response => response.json())
+      .then(dataWilayah => {
+        
+        const grandTotalWNA = Object.values(dataWilayah).reduce((sum, data) => sum + (data.totalWNA || 0), 0);
+        document.getElementById('total-wna-title').innerText = `TOTAL: ${grandTotalWNA} ORANG ASING`;
+        const defaultTitleHTML = titleOverlay.innerHTML;
+
+        const wilayahKerja = [
+          { id: 'biak', name: 'Kab. Biak Numfor', lon: 136.08, lat: -1.17, zoomHeight: 100000 },
+          { id: 'supiori', name: 'Kab. Supiori', lon: 135.72, lat: -0.73, zoomHeight: 80000 },
+          { id: 'nabire', name: 'Kab. Nabire', lon: 135.50, lat: -3.36, zoomHeight: 200000 },
+          { id: 'yapen', name: 'Kab. Kep. Yapen', lon: 136.23, lat: -1.87, zoomHeight: 150000 },
+          { id: 'waropen', name: 'Kab. Waropen', lon: 136.51, lat: -2.33, zoomHeight: 250000 }
+        ];
+        
+        const companyEntities = {};
+        const infoPanel = document.getElementById('infoPanel');
+        const closePanelButton = document.getElementById('closePanelButton');
+        const resetViewButton = document.getElementById('resetViewButton');
+        const handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
+        const homeDestination = Cesium.Cartesian3.fromDegrees(136.0, -3.2, 1700000);
+        
+        // Membuat entitas wilayah kerja dengan data tooltip
+        wilayahKerja.forEach(w => {
+            const data = dataWilayah[w.id];
+            const totalWNA = data ? data.totalWNA : 0;
+            viewer.entities.add({
+                id: w.id, name: w.name, position: Cesium.Cartesian3.fromDegrees(w.lon, w.lat),
+                point: { pixelSize: 12, color: Cesium.Color.RED, outlineColor: Cesium.Color.WHITE, outlineWidth: 2 },
+                label: { text: w.name, font: '14pt sans-serif', fillColor: Cesium.Color.YELLOW, outlineColor: Cesium.Color.BLACK, outlineWidth: 2, style: Cesium.LabelStyle.FILL_AND_OUTLINE, pixelOffset: new Cesium.Cartesian2(0, -30) },
+                // ✅ PERUBAHAN: Menambahkan 'description' untuk tooltip di setiap wilayah
+                description: `<strong>${w.name}</strong><br>Total Orang Asing: ${totalWNA}`
+            });
+        });
+
+        // Membuat entitas perusahaan (disembunyikan) dengan data tooltip
+        for (const [wilayahId, data] of Object.entries(dataWilayah)) {
+            companyEntities[wilayahId] = [];
+            if (data.lokasi) {
+                data.lokasi.forEach(pt => {
+                    companyEntities[wilayahId].push(viewer.entities.add({
+                        show: false,
+                        position: Cesium.Cartesian3.fromDegrees(pt.lon, pt.lat),
+                        point: { pixelSize: 10, color: Cesium.Color.AQUA, outlineColor: Cesium.Color.BLACK, outlineWidth: 2 },
+                        description: `<strong>${pt.nama}</strong><br>Jumlah Orang Asing: ${pt.wna.length}`
+                    }));
+                });
+            }
+        }
+
+        function createTableHTML(group) {
+            if (!group.wna || group.wna.length === 0) return `<h3>${group.nama}</h3><p><i>(Tidak ada data detail WNA)</i></p>`;
+            let rows = group.wna.map((person, index) => `<tr><td>${person.no || index + 1}</td><td>${person.nama || '-'}</td><td>${person.kebangsaan || '-'}</td><td>${person.paspor || '-'}</td></tr>`).join('');
+            return `<h3>${group.nama} (${group.wna.length} orang)</h3><table><tr><th>No</th><th>Nama</th><th>Kebangsaan</th><th>No. Paspor</th></tr>${rows}</table>`;
+        }
+        
+        // Handler untuk klik
+        handler.setInputAction(function(movement) {
+          const pickedObject = viewer.scene.pick(movement.position);
+          if (Cesium.defined(pickedObject) && Cesium.defined(pickedObject.id)) {
+              const entity = pickedObject.id;
+              const entityId = entity.id;
+              Object.values(companyEntities).flat().forEach(e => e.show = false);
+              infoPanel.style.display = 'none';
+              const wilayahData = wilayahKerja.find(w => w.id === entityId);
+              if (wilayahData) {
+                  titleOverlay.innerHTML = `DATA ORANG ASING DI ${entity.name.toUpperCase()}`;
+                  if (companyEntities[entityId]) {
+                      companyEntities[entityId].forEach(e => e.show = true);
+                  }
+                  const dataToShow = dataWilayah[entityId];
+                  if (dataToShow) {
+                      const panelTitle = document.getElementById('panelTitle');
+                      const panelContent = document.getElementById('panelContent');
+                      panelTitle.innerText = `Rekapitulasi WNA ${entity.name}`;
+                      let contentHTML = `<p><strong>Total WNA: ${dataToShow.totalWNA} orang</strong></p>`;
+                      if (dataToShow.totalWNA > 0) {
+                          if (dataToShow.lokasi) { contentHTML += dataToShow.lokasi.map(createTableHTML).join(''); }
+                          if (dataToShow.kategori) { contentHTML += dataToShow.kategori.map(createTableHTML).join(''); }
+                      } else {
+                          contentHTML += `<p>Tidak ada data WNA yang tercatat untuk wilayah ini.</p>`;
+                      }
+                      panelContent.innerHTML = contentHTML;
+                      infoPanel.style.display = 'block';
+                  }
+                  viewer.camera.flyTo({
+                      destination: Cesium.Cartesian3.fromDegrees(wilayahData.lon, wilayahData.lat, wilayahData.zoomHeight),
+                      orientation: { heading: Cesium.Math.toRadians(0.0), pitch: Cesium.Math.toRadians(-90.0), roll: 0.0 },
+                      duration: 1.5 
+                  });
+                  resetViewButton.style.display = 'block';
+              }
+          }
+        }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
+        
+        // ✅ PERUBAHAN: Menambahkan handler untuk kursor (mouse hover)
+        const tooltip = document.getElementById('tooltip');
+        handler.setInputAction(function(movement) {
+            const pickedObject = viewer.scene.pick(movement.endPosition);
+            if (Cesium.defined(pickedObject) && Cesium.defined(pickedObject.id) && Cesium.defined(pickedObject.id.description)) {
+                tooltip.style.display = 'block';
+                tooltip.style.left = movement.endPosition.x + 20 + 'px';
+                tooltip.style.top = movement.endPosition.y + 'px';
+                tooltip.innerHTML = pickedObject.id.description;
+            } else {
+                tooltip.style.display = 'none';
+            }
+        }, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
+
+        resetViewButton.addEventListener('click', () => {
+            viewer.camera.flyTo({ destination: homeDestination, duration: 2 });
+            resetViewButton.style.display = 'none';
+            infoPanel.style.display = 'none';
+            Object.values(companyEntities).flat().forEach(e => e.show = false);
+            titleOverlay.innerHTML = defaultTitleHTML;
+        });
+
+        closePanelButton.addEventListener('click', () => infoPanel.style.display = 'none');
+        
+        setTimeout(function() {
+            viewer.camera.flyTo({ destination: homeDestination, duration: 5 });
+        }, 1000);
+      });
+  </script>
+</body>
+</html>
